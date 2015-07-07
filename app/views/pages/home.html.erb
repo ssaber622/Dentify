@@ -1,5 +1,10 @@
 <div class="container">
 	<h1>Dentify	</h1>
 	<p>Bringing Dentalcare to Everyone!</p>
-	<p> Book an appointment today <%= link_to "Let's Go!", "#", class: "btn btn-primary" %></p>
+	<% if user_signed_in? %>
+		# do something
+	<% else %>
+		<p> Book an appointment today <%= link_to "Let's Go!", new_user_registration_path, class: "btn btn-primary" %></p>
+	<% end %>
+
 </div>
