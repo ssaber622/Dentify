@@ -1,6 +1,25 @@
-$body-bg: #16a085;
-$text-color: white;
-$navbar-default-bg: #16a085;
-$navbar-default-link-color: white;
+@import url(http://fonts.googleapis.com/css?family=Lato);
+
+$body-bg: 												#16a085;
+$font-family-sans-serif: 				  'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$navbar-height: 								   80px;
+$text-color: 											 white;
+$navbar-default-bg: 							 #16a085;
+$navbar-default-brand-color:			 white;
+$navbar-default-link-color:				 white;
+$brand-primary:										 #2980b9;
 
 @import 'bootstrap';
+
+.center {
+	text-align: center;
+}
+
+.navbar-brand {
+	font-weight: bold;
+	font-size: 30px;
+}
+
+.navbar-nav{
+	font-size: 15px;
+}
