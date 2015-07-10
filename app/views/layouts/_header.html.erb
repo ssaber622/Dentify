@@ -15,6 +15,7 @@
       <ul class="nav navbar-nav navbar-right">
         <li><%= link_to "Home", root_path %></li>
         <li><%= link_to "About Us", about_path %></li>
+        <li><%= link_to "How Dentify Works", about_path %></li>
         <% if user_signed_in? %>
         <li><%= link_to "Log Out", destroy_user_session_path, method: :delete %> </li>
         <% else %>
@@ -40,8 +41,7 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
       <ul class="nav navbar-nav navbar-right">
         <p class="navbar-text navbar-center">Made with Love in NYC</p>
-        <li><%= link_to "About Us", about_path %>
-        <li><%= link_to "Are You a Dentist?", joinus_path %>
+        <li><%= link_to "Are You a Dentist? Join Us!", joinus_path %>
       </ul>
     </div><!-- /.navbar-collapse -->
   </div>
